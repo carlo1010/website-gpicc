@@ -1,0 +1,171 @@
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gruppo Piccirillo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="text-black font-montserrat relative">
+
+  <div class="bg-blue-default lg:w-[450px] w-2/3 h-full fixed lg:-right-[450px] -right-2/3 top-0 border-t-8 border-blue-dark" id="menupanel">
+    <ul class="text-white text-right">
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="parco.html" class="block">ACQUISTA UN'AUTO</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="" class="block">VENDI LA TUA AUTO</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="servizi.html" class="block">SERVIZI ED ACCESSORI</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="chisiamo.html" class="block">GRUPPO PICCIRILLO</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="" class="block">LE NOSTRE SEDI</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="academy.html" class="block">ACCADEMY</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="" class="block">BLOG</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="faq.html" class="block">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="bg-blue-default lg:w-[450px] w-2/3 h-full fixed lg:-right-[450px] -right-2/3 top-0 border-t-8 border-blue-dark" id="cartpanel">
+    <h3 class="text-white py-3 text-xl font-medium px-4">IL TUO CARRELLO</h3>
+    <div class="flex flex-row flex-wrap items-center text-sm px-4 mb-2">
+      <div class="basis-2/12 lg:inline-block hidden">
+        <img src="img/sample-car1.webp" class="img-responsive" />
+      </div>
+      <div class="basis-7/12">
+        <h3 class="text-white font-semibold px-3">595 Scorpion Oro</h3>
+      </div>
+      <div class="lg:basis-3/12 basis-5/12 text-end">
+        <p class="text-red-default font-semibold">€ 24.900</p>
+      </div>
+    </div>
+    <div class="flex flex-row flex-wrap items-center text-sm px-4 mb-2">
+      <div class="basis-2/12 lg:inline-block hidden">
+        <img src="img/sample-car1.webp" class="img-responsive" />
+      </div>
+      <div class="basis-7/12">
+        <h3 class="text-white font-semibold px-3">595 Scorpion Oro</h3>
+      </div>
+      <div class="lg:basis-3/12 basis-5/12 text-end">
+        <p class="text-red-default font-semibold">€ 24.900</p>
+      </div>
+    </div>
+    <div class="flex flex-row flex-wrap items-center bg-white justify-between py-4 font-medium px-4">
+      <p class="hidden lg:inline-block">TOTALE CARRELLO</p>
+      <i class="lg:hidden text-2xl fa-solid fa-coins"></i>
+      <p class="text-red-default font-semibold lg:text-start text-end">€ 49.800</p>
+    </div>
+    <div class="flex flex-row justify-between text-xs px-4 mt-3">
+      <a href="" class="buttonBluDark">CHIUDI IL CARRELLO</a>
+      <a href="cart.html" class="buttonRed">CONCLUDI LA PRENOTAZIONE</a>
+    </div>
+  </div>
+
+  <div class="fullWrap">
+    <header class="flex flex-row justify-between items-center py-3 lg:px-10 px-6 top-0 left-0 w-full z-20 bg-white">
+      <div class="basis-3/12">
+        <a href="index.html"><img src="img/logo-gp.webp" /></a>
+      </div>
+      <div class="basis-4/12 text-end">
+        <nav class="inline-block">
+          <ul class="flex gap-6 font-semibold ">
+            <li class="hidden lg:inline-block"><a href="">CONTATTACI</a></li>
+            <li class="hidden lg:inline-block"><a href="login.html">ACCEDI</a></li>
+            <li><a href="parco.html"><i class="fa-solid fa-magnifying-glass text-2xl"></i></a></li>
+            <li class="relative">
+              <a href="" id="openCart">
+                <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                <span
+                  class="absolute -top-2 -right-3 bg-red-default rounded-full text-white block w-5 h-5 text-center text-xs leading-5">5</span>
+              </a>
+            </li>
+            <li><a href="" id="openMenu"><i class="fa-solid fa-bars text-2xl"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="flex flex-row justify-center py-12">
+      <div class="xl:basis-10/12 lg:basis-11/12 basis-full lg:px-0 px-6">
+        <h1 class="text-2xl font-medium mb-8">ACCADEMY</h1>
+        <div class="grid grid-cols-2 gap-5 gap-y-4">
+            <div class="col-span-2">
+              <img src="img/business-man.webp" />
+              <h2 class="text-center font-semibold text-xl py-4">ENTRA NEL TEAM DI GRUPPO PICCIRILLO</h2>
+              <p>In Gruppo Piccirillo S.p.A. ci impegniamo ogni giorno per rendere soddisfacente l’esperienza dei nostri clienti e lo facciamo affidandoci a collaboratori che condividono la nostra visione e i nostri valori. Gruppo Piccirillo è alla ricerca di consulenti per l’acquisto e vendita digitale con formule innovative nel settore automotive, che abbiano esperienza nel mondo delle auto sia nel comparto acquisti che in quello delle vendite digitali. L’azienda offrirà ai neo assunti di accedere ad un corso di formazione al fine di acquisire le skills necessarie per tale mansione.</p>
+            </div>
+            <div class="lg:col-span-1 col-span-2">
+              <h2 class="text-center font-semibold text-xl py-4">Responsabilità</h2>
+              <ul class="list-disc pr-4">
+                <li>Creazione e mantenimento delle relazioni con il Fornitore attraverso attività di acquisto e consulenza</li>
+                <li>Gestione e mantenimento delle relazioni con il Cliente attraverso attività di vendita digitale e consulenza</li>
+                <li>Raggiungimento degli obiettivi attraverso l'acquisto e la vendita digitale di vetture, servizi ed accessori</li>
+                <li>Raggiungimento della massima soddisfazione del Cliente attraverso un'approfondita analisi dei bisogni</li>
+                <li>abilità nello studio e nell'analisi del mondo delle auto e delle strategie di mercato</li>
+              </ul>
+            </div>
+            <div class="lg:col-span-1 col-span-2">
+              <h2 class="text-center font-semibold text-xl py-4">Requisiti</h2>
+              <ul class="list-disc">
+                <li>Diploma o Laurea</li>
+                <li>Forte motivazione e approccio focalizzato sugli obiettivi</li>
+                <li>Ottime doti comunicative e di gestione del tempo</li>
+                <li>motivazione al raggiungimento degli obiettivi</li>
+                <li>pregressa esperienza nella vendita e nell'acquisto nel settore automotive</li>
+                <li>conoscenza delle principali tecniche di acquisto e vendita digitale delle auto</li>
+              </ul>
+            </div>
+            <div class="col-span-2">
+              <p>Il corso di Formazione in consulente di vendita organizzato da Gruppo Piccirillo S.p.a. si propone di fornire ai partecipanti le principali conoscenze e strategie più efficaci per vendere un’automobile ai tempi del digitale, partendo dal primo approccio con il cliente fino alla fase contrattuale.</p>
+            </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <footer class="grid lg:grid-cols-12 grid-cols-2 bg-blue-dark lg:px-12 py-12 px-6 text-white gap-5 text-sm items-center">
+      <div class="lg:col-span-4 col-span-2">
+        <div class="flex flex-row gap-5 items-center">
+          <img src="img/logo-gp-white.webp" class="lg:w-auto w-16 img-responsive" />
+          <p class="text-xs w-full">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            euismod tincidunt ut laoreet.</p>
+        </div>
+      </div>
+      <div class="lg:col-span-1 col-span-2">
+        <a href="parco.html" class="border-white border px-4 py-2 block text-center mb-4 hover:bg-white hover:text-blue-dark">ACQUISTA</a>
+        <a href="" class="border-white border px-4 py-2 block text-center hover:bg-white hover:text-blue-dark">VENDI</a>
+      </div>
+      <div class="lg:col-span-2 col-span-1">
+        <ul>
+          <li class="mb-2"><a href="">Chi siamo</a></li>
+          <li class="mb-2"><a href="">Blog</a></li>
+          <li class="mb-2"><a href="">Academy</a></li>
+          <li><a href="">Punti vendita</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-2 col-span-1">
+        <ul>
+          <li class="mb-2"><a href="">Termini e condizioni</a></li>
+          <li class="mb-2"><a href="">Privacy Policy</a></li>
+          <li class="mb-2"><a href="">Cookie Policy</a></li>
+          <li><a href="">Faq</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-3 col-span-2 text-center">
+        <ul class="flex flex-row flex-wrap lg:justify-end justify-center gap-3 text-2xl">
+          <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/scripting.js"></script>
+</body>
+
+</html>

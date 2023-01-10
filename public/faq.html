@@ -1,0 +1,364 @@
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gruppo Piccirillo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="text-black font-montserrat relative">
+
+  <div class="bg-blue-default lg:w-[450px] w-2/3 h-full fixed lg:-right-[450px] -right-2/3 top-0 border-t-8 border-blue-dark" id="menupanel">
+    <ul class="text-white text-right">
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="parco.html" class="block">ACQUISTA UN'AUTO</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="" class="block">VENDI LA TUA AUTO</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="servizi.html" class="block">SERVIZI ED ACCESSORI</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="chisiamo.html" class="block">GRUPPO PICCIRILLO</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="" class="block">LE NOSTRE SEDI</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="academy.html" class="block">ACCADEMY</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="" class="block">BLOG</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="faq.html" class="block">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="bg-blue-default lg:w-[450px] w-2/3 h-full fixed lg:-right-[450px] -right-2/3 top-0 border-t-8 border-blue-dark" id="cartpanel">
+    <h3 class="text-white py-3 text-xl font-medium px-4">IL TUO CARRELLO</h3>
+    <div class="flex flex-row flex-wrap items-center text-sm px-4 mb-2">
+      <div class="basis-2/12 lg:inline-block hidden">
+        <img src="img/sample-car1.webp" class="img-responsive" />
+      </div>
+      <div class="basis-7/12">
+        <h3 class="text-white font-semibold px-3">595 Scorpion Oro</h3>
+      </div>
+      <div class="lg:basis-3/12 basis-5/12 text-end">
+        <p class="text-red-default font-semibold">€ 24.900</p>
+      </div>
+    </div>
+    <div class="flex flex-row flex-wrap items-center text-sm px-4 mb-2">
+      <div class="basis-2/12 lg:inline-block hidden">
+        <img src="img/sample-car1.webp" class="img-responsive" />
+      </div>
+      <div class="basis-7/12">
+        <h3 class="text-white font-semibold px-3">595 Scorpion Oro</h3>
+      </div>
+      <div class="lg:basis-3/12 basis-5/12 text-end">
+        <p class="text-red-default font-semibold">€ 24.900</p>
+      </div>
+    </div>
+    <div class="flex flex-row flex-wrap items-center bg-white justify-between py-4 font-medium px-4">
+      <p class="hidden lg:inline-block">TOTALE CARRELLO</p>
+      <i class="lg:hidden text-2xl fa-solid fa-coins"></i>
+      <p class="text-red-default font-semibold lg:text-start text-end">€ 49.800</p>
+    </div>
+    <div class="flex flex-row justify-between text-xs px-4 mt-3">
+      <a href="" class="buttonBluDark">CHIUDI IL CARRELLO</a>
+      <a href="cart.html" class="buttonRed">CONCLUDI LA PRENOTAZIONE</a>
+    </div>
+  </div>
+
+  <div id="contactFaq" class="hidden">
+    <h2 class="text-lg font-semibold">COMPLETA LA RICHIESTA PER ESSERE CONTATTATO</h2>
+    <p class="mb-8">Inserisci i tuoi dati da indirizzare la tua chiamata all'ufficio più vicino</p>
+    <form>
+      <div class="grid grid-cols-2 gap-5">
+        <div>
+          <fieldset>
+            <label class="text-xs font-semibold block">nome</label>
+            <input class="w-full" type="text" value="" />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <label class="text-xs font-semibold block">cognome</label>
+            <input class="w-full" type="text" value="" />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <label class="text-xs font-semibold block">email</label>
+            <input class="w-full" type="email" value="" />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <label class="text-xs font-semibold block">telefono</label>
+            <input class="w-full" type="text" value="" />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <label class="text-xs font-semibold block">Provincia</label>
+            <select class="w-full">
+              <option value="">Seleziona la provincia</option>
+              <option value="">Agrigento</option>
+              <option value="">Alessandra</option>
+            </select>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <label class="text-xs font-semibold block">Motivazione</label>
+            <select class="w-full">
+              <option value="">Seleziona la motivazione</option>
+              <option value="">Richiesta informazioni</option>
+              <option value="">Motivi commerciali</option>
+              <option value="">Altri motivi</option>
+            </select>
+          </fieldset>
+        </div>
+        <div class="hidden optionContact defaultContact">
+          <fieldset>
+            <input type="submit" value="INVIA" class="buttonRed">
+          </fieldset>
+        </div>
+        <div class="hidden optionContact wappContact">
+          <fieldset>                        
+            <a target="_blank" class="buttonWapp" href="https://api.whatsapp.com/send/?phone=%2B393887928638&amp;text=Ciao+mi+chiamo++e+vorrei+maggiori+indormazioni+su+[object Object]+&amp;app_absent=0">VIA WHATSAPP</a>
+          </fieldset>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="fullWrap">
+    <header class="flex flex-row justify-between items-center py-3 lg:px-10 px-6 top-0 left-0 w-full z-20 bg-white">
+      <div class="basis-3/12">
+        <a href="index.html"><img src="img/logo-gp.webp" /></a>
+      </div>
+      <div class="basis-4/12 text-end">
+        <nav class="inline-block">
+          <ul class="flex gap-6 font-semibold ">
+            <li class="hidden lg:inline-block"><a href="">CONTATTACI</a></li>
+            <li class="hidden lg:inline-block"><a href="login.html">ACCEDI</a></li>
+            <li><a href="parco.html"><i class="fa-solid fa-magnifying-glass text-2xl"></i></a></li>
+            <li class="relative">
+              <a href="" id="openCart">
+                <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                <span
+                  class="absolute -top-2 -right-3 bg-red-default rounded-full text-white block w-5 h-5 text-center text-xs leading-5">5</span>
+              </a>
+            </li>
+            <li><a href="" id="openMenu"><i class="fa-solid fa-bars text-2xl"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="flex flex-row justify-center py-12">
+      <div class="lg:basis-10/12 basis-full lg:px-0 p-6">
+        <h1 class="text-2xl font-medium">FAQ</h1>
+        <p class="mb-12">Qui trovi le domande frequenti che le persone inviano ai nostri uffici. Clicca sulla domanda che ti interessa per leggere la risposta.</p>
+
+        <div class="my-3 fullFaq">
+          <div class="openFaq flex flex-row justify-between py-3 px-4 text-lg border border-grey-default items-center cursor-pointer">
+            <h2 class="font-semibold">PRENOTA ONLINE E COME FUNZIONA LA SCELTA DELLA TUA AUTO </h2>
+            <i class="fa-solid fa-circle-chevron-down text-grey-dark"></i>
+          </div>              
+          <div class="bg-grey-light px-14 py-7 hidden answer">
+              <ul class="list-decimal">
+                  <li class="mb-2"><p>Cerca l'auto dei tuoi sogni in un immenso parco auto disponibile a pronta consegna con prenotazione online e immediata. Per effettuare la prenotazione basta un piccolo anticipo di euro 100 e se cambi idea ti verrà rimborsato interamente l’importo tramite la procedura PayPal o carta di credito.</p></li>
+                  <li class="mb-2"><p>Ti verrà assegnato un assistente personale, il quale ti seguirà dandoti tutte le informazioni dalla A alla Z, con assistenza generale fino alla relativa consegna dell’auto partendo dal preventivo, contratto di vendita con la definizione delle modalità di pagamento, i servizi & accessori riportati al paragrafo Personalizzazioni Veicoli, compreso intestazione del veicolo ed eventuali informazioni.</p></li>
+                  <li class="mb-2"><p>Saldo del veicolo, fatturazione dell'auto e successiva immatricolazione/trasferimento di proprietà avvengono da 0 giorni a 15 giorni nel rispetto dell’esigenza del cliente e di vari fattori di gestione che Vi saranno illustrati dal Vostro assistente personale.</p></li>
+              </ul>
+              <div class="flex flex-row flex-wrap gap-4 mt-8">
+                <a href="" data-src="#contactFaq" data-fancybox class="buttonRed defCnt">CHIAMACI</a>
+                <a href="" data-src="#contactFaq" data-fancybox class="buttonBluDark defCnt">RICHIEDI APPUNTAMENTO</a>
+                <a href="" data-src="#contactFaq" data-fancybox class="buttonWapp wappCnt">CONTATTACI SU WHATSAPP</a>
+              </div>
+          </div>
+        </div>
+        <div class="my-3 fullFaq">
+          <div class="openFaq flex flex-row justify-between py-3 px-4 text-lg border border-grey-default items-center cursor-pointer">
+            <h2 class="font-semibold">PERMUTE COMPRIAMO AUTO </h2>
+            <i class="fa-solid fa-circle-chevron-down text-grey-dark"></i>
+          </div>              
+          <div class="bg-grey-light px-14 py-7 hidden answer">
+              <ul class="list-decimal">
+                  <li class="mb-2">
+                    <p class="font-semibold">Valutate l'usato?</p>
+                    <p>Assolutamente si acquistiamo e permutiamo qualsiasi tipo di veicolo come meglio riportato al seguente link:<a href="">Link</a></a></p>
+                  </li>
+                  <li class="mb-2">
+                    <p class="font-semibold">Quali documenti sono necessari per vendere o permutare un veicolo?</p>
+                    <p>Sono necessari il libretto di circolazione, il certificato di proprietà (solo per i veicoli immatricolati prima del 2015) e i documenti di identità dell’intestatario e la copia della tassa di circolazione.</p>
+                  </li>
+                  <li class="mb-2">
+                    <p class="font-semibold">Posso permutare un veicolo non intestato all'acquirente?</p>
+                    <p>No, il veicolo però può essere acquistato da Gruppo Piccirillo SpA come acquisto singolo.</p>
+                  </li>
+                  <li class="mb-2">
+                    <p class="font-semibold">Posso permutare più di un veicolo?</p>
+                    <p>Assolutamente sì non abbiamo nessun limite.</p>
+                  </li>
+                  <li class="mb-2">
+                    <p class="font-semibold">Prendete anche veicoli da rottamare?</p>
+                    <p>Generalmente si</p>
+                  </li>
+              </ul>
+              <div class="flex flex-row flex-wrap gap-4 mt-8">
+                <a href="" data-src="#contactFaq" data-fancybox class="buttonRed defCnt">CHIAMACI</a>
+                <a href="" data-src="#contactFaq" data-fancybox class="buttonBluDark defCnt">RICHIEDI APPUNTAMENTO</a>
+                <a href="" data-src="#contactFaq" data-fancybox class="buttonWapp wappCnt">CONTATTACI SU WHATSAPP</a>
+              </div>
+          </div>
+        </div>
+        <div class="my-3 fullFaq">
+          <div class="openFaq flex flex-row justify-between py-3 px-4 text-lg border border-grey-default items-center cursor-pointer">
+            <h2 class="font-semibold">PRENOTA ONLINE E COME FUNZIONA LA SCELTA DELLA TUA AUTO </h2>
+            <i class="fa-solid fa-circle-chevron-down text-grey-dark"></i>
+          </div>              
+          <div class="bg-grey-light px-14 py-7 hidden answer">
+              <ul class="list-decimal">
+                  <li class="mb-2"><p>Cerca l'auto dei tuoi sogni in un immenso parco auto disponibile a pronta consegna con prenotazione online e immediata. Per effettuare la prenotazione basta un piccolo anticipo di euro 100 e se cambi idea ti verrà rimborsato interamente l’importo tramite la procedura PayPal o carta di credito.</p></li>
+                  <li class="mb-2"><p>Ti verrà assegnato un assistente personale, il quale ti seguirà dandoti tutte le informazioni dalla A alla Z, con assistenza generale fino alla relativa consegna dell’auto partendo dal preventivo, contratto di vendita con la definizione delle modalità di pagamento, i servizi & accessori riportati al paragrafo Personalizzazioni Veicoli, compreso intestazione del veicolo ed eventuali informazioni.</p></li>
+                  <li class="mb-2"><p>Saldo del veicolo, fatturazione dell'auto e successiva immatricolazione/trasferimento di proprietà avvengono da 0 giorni a 15 giorni nel rispetto dell’esigenza del cliente e di vari fattori di gestione che Vi saranno illustrati dal Vostro assistente personale.</p></li>
+              </ul>
+              <div class="flex flex-row flex-wrap gap-4 mt-8">
+                <a href="" data-src="#contactFaq" data-fancybox class="buttonRed defCnt">CHIAMACI</a>
+                <a href="" data-src="#contactFaq" data-fancybox class="buttonBluDark defCnt">RICHIEDI APPUNTAMENTO</a>
+                <a href="" data-src="#contactFaq" data-fancybox class="buttonWapp wappCnt">CONTATTACI SU WHATSAPP</a>
+              </div>
+          </div>
+        </div>
+        <div class="my-3 fullFaq">
+          <div class="openFaq flex flex-row justify-between py-3 px-4 text-lg border border-grey-default items-center cursor-pointer">
+            <h2 class="font-semibold">PERMUTE COMPRIAMO AUTO </h2>
+            <i class="fa-solid fa-circle-chevron-down text-grey-dark"></i>
+          </div>              
+          <div class="bg-grey-light px-14 py-7 hidden answer">
+              <ul class="list-decimal">
+                  <li class="mb-2">
+                    <p class="font-semibold">Valutate l'usato?</p>
+                    <p>Assolutamente si acquistiamo e permutiamo qualsiasi tipo di veicolo come meglio riportato al seguente link:<a href="">Link</a></a></p>
+                  </li>
+                  <li class="mb-2">
+                    <p class="font-semibold">Quali documenti sono necessari per vendere o permutare un veicolo?</p>
+                    <p>Sono necessari il libretto di circolazione, il certificato di proprietà (solo per i veicoli immatricolati prima del 2015) e i documenti di identità dell’intestatario e la copia della tassa di circolazione.</p>
+                  </li>
+                  <li class="mb-2">
+                    <p class="font-semibold">Posso permutare un veicolo non intestato all'acquirente?</p>
+                    <p>No, il veicolo però può essere acquistato da Gruppo Piccirillo SpA come acquisto singolo.</p>
+                  </li>
+                  <li class="mb-2">
+                    <p class="font-semibold">Posso permutare più di un veicolo?</p>
+                    <p>Assolutamente sì non abbiamo nessun limite.</p>
+                  </li>
+                  <li class="mb-2">
+                    <p class="font-semibold">Prendete anche veicoli da rottamare?</p>
+                    <p>Generalmente si</p>
+                  </li>
+              </ul>
+              <div class="flex flex-row flex-wrap gap-4 mt-8">
+                <a href="" data-src="#contactFaq" data-fancybox class="buttonRed defCnt">CHIAMACI</a>
+                <a href="" data-src="#contactFaq" data-fancybox class="buttonBluDark defCnt">RICHIEDI APPUNTAMENTO</a>
+                <a href="" data-src="#contactFaq" data-fancybox class="buttonWapp wappCnt">CONTATTACI SU WHATSAPP</a>
+              </div>
+          </div>
+        </div>
+        <div class="my-3 fullFaq">
+          <div class="openFaq flex flex-row justify-between py-3 px-4 text-lg border border-grey-default items-center cursor-pointer">
+            <h2 class="font-semibold">PRENOTA ONLINE E COME FUNZIONA LA SCELTA DELLA TUA AUTO </h2>
+            <i class="fa-solid fa-circle-chevron-down text-grey-dark"></i>
+          </div>              
+          <div class="bg-grey-light px-14 py-7 hidden answer">
+              <ul class="list-decimal">
+                  <li class="mb-2"><p>Cerca l'auto dei tuoi sogni in un immenso parco auto disponibile a pronta consegna con prenotazione online e immediata. Per effettuare la prenotazione basta un piccolo anticipo di euro 100 e se cambi idea ti verrà rimborsato interamente l’importo tramite la procedura PayPal o carta di credito.</p></li>
+                  <li class="mb-2"><p>Ti verrà assegnato un assistente personale, il quale ti seguirà dandoti tutte le informazioni dalla A alla Z, con assistenza generale fino alla relativa consegna dell’auto partendo dal preventivo, contratto di vendita con la definizione delle modalità di pagamento, i servizi & accessori riportati al paragrafo Personalizzazioni Veicoli, compreso intestazione del veicolo ed eventuali informazioni.</p></li>
+                  <li class="mb-2"><p>Saldo del veicolo, fatturazione dell'auto e successiva immatricolazione/trasferimento di proprietà avvengono da 0 giorni a 15 giorni nel rispetto dell’esigenza del cliente e di vari fattori di gestione che Vi saranno illustrati dal Vostro assistente personale.</p></li>
+              </ul>
+              <div class="flex flex-row flex-wrap gap-4 mt-8">
+                <a href="" data-src="#contactFaq" data-fancybox class="buttonRed defCnt">CHIAMACI</a>
+                <a href="" data-src="#contactFaq" data-fancybox class="buttonBluDark defCnt">RICHIEDI APPUNTAMENTO</a>
+                <a href="" data-src="#contactFaq" data-fancybox class="buttonWapp wappCnt">CONTATTACI SU WHATSAPP</a>
+              </div>
+          </div>
+        </div>
+        <div class="my-3 fullFaq">
+          <div class="openFaq flex flex-row justify-between py-3 px-4 text-lg border border-grey-default items-center cursor-pointer">
+            <h2 class="font-semibold">PERMUTE COMPRIAMO AUTO </h2>
+            <i class="fa-solid fa-circle-chevron-down text-grey-dark"></i>
+          </div>              
+          <div class="bg-grey-light px-14 py-7 hidden answer">
+              <ul class="list-decimal">
+                  <li class="mb-2">
+                    <p class="font-semibold">Valutate l'usato?</p>
+                    <p>Assolutamente si acquistiamo e permutiamo qualsiasi tipo di veicolo come meglio riportato al seguente link:<a href="">Link</a></a></p>
+                  </li>
+                  <li class="mb-2">
+                    <p class="font-semibold">Quali documenti sono necessari per vendere o permutare un veicolo?</p>
+                    <p>Sono necessari il libretto di circolazione, il certificato di proprietà (solo per i veicoli immatricolati prima del 2015) e i documenti di identità dell’intestatario e la copia della tassa di circolazione.</p>
+                  </li>
+                  <li class="mb-2">
+                    <p class="font-semibold">Posso permutare un veicolo non intestato all'acquirente?</p>
+                    <p>No, il veicolo però può essere acquistato da Gruppo Piccirillo SpA come acquisto singolo.</p>
+                  </li>
+                  <li class="mb-2">
+                    <p class="font-semibold">Posso permutare più di un veicolo?</p>
+                    <p>Assolutamente sì non abbiamo nessun limite.</p>
+                  </li>
+                  <li class="mb-2">
+                    <p class="font-semibold">Prendete anche veicoli da rottamare?</p>
+                    <p>Generalmente si</p>
+                  </li>
+              </ul>
+              <div class="flex flex-row flex-wrap gap-4 mt-8">
+                <a href="" data-src="#contactFaq" data-fancybox class="buttonRed defCnt">CHIAMACI</a>
+                <a href="" data-src="#contactFaq" data-fancybox class="buttonBluDark defCnt">RICHIEDI APPUNTAMENTO</a>
+                <a href="" data-src="#contactFaq" data-fancybox class="buttonWapp wappCnt">CONTATTACI SU WHATSAPP</a>
+              </div>
+          </div>
+        </div>
+        
+    </section>
+
+    <footer class="grid lg:grid-cols-12 grid-cols-2 bg-blue-dark lg:px-12 py-12 px-6 text-white gap-5 text-sm items-center">
+      <div class="lg:col-span-4 col-span-2">
+        <div class="flex flex-row gap-5 items-center">
+          <img src="img/logo-gp-white.webp" class="lg:w-auto w-16 img-responsive" />
+          <p class="text-xs w-full">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            euismod tincidunt ut laoreet.</p>
+        </div>
+      </div>
+      <div class="lg:col-span-1 col-span-2">
+        <a href="parco.html" class="border-white border px-4 py-2 block text-center mb-4 hover:bg-white hover:text-blue-dark">ACQUISTA</a>
+        <a href="" class="border-white border px-4 py-2 block text-center hover:bg-white hover:text-blue-dark">VENDI</a>
+      </div>
+      <div class="lg:col-span-2 col-span-1">
+        <ul>
+          <li class="mb-2"><a href="">Chi siamo</a></li>
+          <li class="mb-2"><a href="">Blog</a></li>
+          <li class="mb-2"><a href="">Academy</a></li>
+          <li><a href="">Punti vendita</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-2 col-span-1">
+        <ul>
+          <li class="mb-2"><a href="">Termini e condizioni</a></li>
+          <li class="mb-2"><a href="">Privacy Policy</a></li>
+          <li class="mb-2"><a href="">Cookie Policy</a></li>
+          <li><a href="">Faq</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-3 col-span-2 text-center">
+        <ul class="flex flex-row flex-wrap lg:justify-end justify-center gap-3 text-2xl">
+          <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/scripting.js"></script>
+</body>
+
+</html>

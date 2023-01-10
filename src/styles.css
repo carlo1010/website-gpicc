@@ -1,0 +1,124 @@
+@import '@fortawesome\fontawesome-free\css\all';
+@import 'flexslider\flexslider';
+@import '@fancyapps\ui\dist\fancybox.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.img-responsive{
+    @apply max-w-full h-auto;
+}
+
+.gp-flexslider{
+    @apply m-0 bg-transparent border-0;    
+}
+
+.carbrand .slides img{
+    @apply w-auto inline-block; 
+}
+
+.countCar{
+    @apply hidden bg-blue-default/90 text-white absolute w-full h-full top-0 left-0 items-center;
+}
+
+.beforeCircle{
+    @apply before:block before:absolute lg:before:w-40 before:w-32 before:h-auto before:rounded-full before:top-0 before:left-0 before:bg-grey-default before:aspect-square before:-z-10;
+}
+
+.buttonRed{
+    @apply bg-red-default text-white py-2 px-4 hover:text-red-default hover:bg-white border-red-default border;
+}
+
+.buttonBluDark{
+    @apply bg-blue-dark text-white py-2 px-4 hover:text-blue-dark hover:bg-white border-blue-dark border;
+}
+
+.buttonWapp{
+    @apply bg-green-whatsapp text-white py-2 px-4 hover:text-green-whatsapp hover:bg-white border-green-whatsapp border;
+}
+
+.borderRedButton{
+    @apply border-red-default border-2 px-2 py-1 font-semibold hover:bg-red-default hover:text-white cursor-pointer;
+}
+
+.activeTab{
+    @apply bg-red-default text-white;
+}
+
+.dynWidth{
+    width: calc(100% - 47px);
+}
+
+.openedSearch{
+    @apply h-full bg-blue-default/50;
+}
+
+.movedWrap{
+    @apply absolute lg:right-[450px] right-2/3;
+}
+
+.movedHeader{
+    @apply lg:-left-[450px] -left-2/3;
+}
+
+.showSidePanel{
+    @apply lg:right-0 right-0 !important;
+}
+
+.gp-pagination li{
+    @apply inline;
+}
+
+.gp-pagination li a{
+    @apply inline-block w-10 h-10 bg-grey-default text-center mr-1 leading-10 hover:bg-blue-default hover:text-white;
+}
+
+.gp-pagination li a.activePage{
+    @apply bg-blue-default text-white;
+}
+
+.alternate li{
+    @apply py-1 px-3;
+}
+
+.alternate li:nth-child(odd){
+    @apply bg-grey-default;
+}
+
+input[type=range] {
+    @apply m-0 w-full mt-4;
+    -webkit-appearance: none;    
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    @apply bg-grey-dark w-full h-1 cursor-pointer rounded-3xl border-black;    
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;    
+}
+
+input[type=range]::-webkit-slider-thumb {
+    @apply bg-blue-default h-3 w-3 rounded-full cursor-pointer -mt-[3.6px];
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 0px solid #000000;   
+    -webkit-appearance: none;    
+}
+
+.activeChoose{
+    @apply bg-blue-default text-white;
+}
+
+.fullWrap{
+    @apply w-full;
+}
+
+.okNotice{
+    @apply bg-green-light text-green-default rounded-xl py-2 px-4;
+}
+
+.errNotice{
+    @apply bg-red-light text-red-default rounded-xl py-2 px-4;
+}

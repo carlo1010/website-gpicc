@@ -1,0 +1,289 @@
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gruppo Piccirillo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="text-black font-montserrat relative">
+
+  <div class="bg-blue-default lg:w-[450px] w-2/3 h-full fixed lg:-right-[450px] -right-2/3 top-0 border-t-8 border-blue-dark" id="menupanel">
+    <ul class="text-white text-right">
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="parco.html" class="block">ACQUISTA UN'AUTO</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="" class="block">VENDI LA TUA AUTO</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="servizi.html" class="block">SERVIZI ED ACCESSORI</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="chisiamo.html" class="block">GRUPPO PICCIRILLO</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="" class="block">LE NOSTRE SEDI</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="academy.html" class="block">ACCADEMY</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="" class="block">BLOG</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="faq.html" class="block">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="bg-blue-default lg:w-[450px] w-2/3 h-full fixed lg:-right-[450px] -right-2/3 top-0 border-t-8 border-blue-dark" id="cartpanel">
+    <h3 class="text-white py-3 text-xl font-medium px-4">IL TUO CARRELLO</h3>
+    <div class="flex flex-row flex-wrap items-center text-sm px-4 mb-2">
+      <div class="basis-2/12 lg:inline-block hidden">
+        <img src="img/sample-car1.webp" class="img-responsive" />
+      </div>
+      <div class="basis-7/12">
+        <h3 class="text-white font-semibold px-3">595 Scorpion Oro</h3>
+      </div>
+      <div class="lg:basis-3/12 basis-5/12 text-end">
+        <p class="text-red-default font-semibold">€ 24.900</p>
+      </div>
+    </div>
+    <div class="flex flex-row flex-wrap items-center text-sm px-4 mb-2">
+      <div class="basis-2/12 lg:inline-block hidden">
+        <img src="img/sample-car1.webp" class="img-responsive" />
+      </div>
+      <div class="basis-7/12">
+        <h3 class="text-white font-semibold px-3">595 Scorpion Oro</h3>
+      </div>
+      <div class="lg:basis-3/12 basis-5/12 text-end">
+        <p class="text-red-default font-semibold">€ 24.900</p>
+      </div>
+    </div>
+    <div class="flex flex-row flex-wrap items-center bg-white justify-between py-4 font-medium px-4">
+      <p class="hidden lg:inline-block">TOTALE CARRELLO</p>
+      <i class="lg:hidden text-2xl fa-solid fa-coins"></i>
+      <p class="text-red-default font-semibold lg:text-start text-end">€ 49.800</p>
+    </div>
+    <div class="flex flex-row justify-between text-xs px-4 mt-3">
+      <a href="" class="buttonBluDark">CHIUDI IL CARRELLO</a>
+      <a href="cart.html" class="buttonRed">CONCLUDI LA PRENOTAZIONE</a>
+    </div>
+  </div>
+
+  <div class="fullWrap">
+    <header class="flex flex-row justify-between items-center py-3 lg:px-10 px-6 top-0 left-0 w-full z-20 bg-white">
+      <div class="basis-3/12">
+        <a href="index.html"><img src="img/logo-gp.webp" /></a>
+      </div>
+      <div class="basis-4/12 text-end">
+        <nav class="inline-block">
+          <ul class="flex gap-6 font-semibold ">
+            <li class="hidden lg:inline-block"><a href="">CONTATTACI</a></li>
+            <li class="hidden lg:inline-block"><a href="login.html">ACCEDI</a></li>
+            <li><a href="parco.html"><i class="fa-solid fa-magnifying-glass text-2xl"></i></a></li>
+            <li class="relative">
+              <a href="" id="openCart">
+                <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                <span
+                  class="absolute -top-2 -right-3 bg-red-default rounded-full text-white block w-5 h-5 text-center text-xs leading-5">5</span>
+              </a>
+            </li>
+            <li><a href="" id="openMenu"><i class="fa-solid fa-bars text-2xl"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="flex flex-row justify-center py-12">
+      <div class="xl:basis-10/12 lg:basis-11/12 basis-full lg:px-0 px-6">
+        <h1 class="text-2xl font-medium mb-8">LA MIA AREA PERSONALE</h1>
+        <div class="grid lg:grid-cols-2 lg:gap-5 grid-cols-1">
+          <div>
+            <div class="bg-grey-light p-4 mb-7">
+              <h2 class="text-xl mb-4 font-medium">I TUOI DATI</h2>
+              <p>Mario Rossi</p>
+              <p>Via tal dei tali, 123, 81100, Caserta</p>
+              <p>MRORSS67H02E891J</p>
+              <p>+39 3569854789</p>
+              <p>mrossi@gmail.com</p>
+              <a href="" id="editLink" class="text-red-default inline-block mt-4 font-medium">Modifica Dati ></a>
+            </div>
+            <div class="bg-grey-light p-4 mb-7 hidden" id="editPanel">
+              <h2 class="text-xl mb-4 font-medium">I TUOI DATI</h2>
+              <form>
+                <div class="grid lg:grid-cols-4 grid-cols-2 gap-5 gap-y-4">
+                  <div class="lg:col-span-2">
+                    <fieldset>
+                      <label class="text-xs font-semibold mb-1 block">nome</label>
+                      <input type="text" placeholder="il tuo nome" class="border-none w-full" />
+                    </fieldset>
+                  </div>
+                  <div class="lg:col-span-2">
+                    <fieldset>
+                      <label class="text-xs font-semibold mb-1 block">cognome</label>
+                      <input type="text" placeholder="il tuo cognome" class="border-none w-full" />
+                    </fieldset>
+                  </div>
+                  <div class="lg:col-span-2">
+                    <fieldset>
+                      <label class="text-xs font-semibold mb-1 block">email</label>
+                      <input type="text" placeholder="ex: mail@test.eu" class="border-none w-full" />
+                    </fieldset>
+                  </div>
+                  <div class="lg:col-span-2">
+                    <fieldset>
+                      <label class="text-xs font-semibold mb-1 block">telefono</label>
+                      <input type="text" placeholder="ex: 000-1234567" class="border-none w-full" />
+                    </fieldset>
+                  </div>
+                  <div class="lg:col-span-3 col-span-2">
+                    <fieldset>
+                      <label class="text-xs font-semibold mb-1 block">codice fiscale</label>
+                      <input type="text" placeholder="il tuo codice fiscale" class="border-none w-full" />
+                    </fieldset>
+                  </div>
+                  <div class="lg:col-span-1 lg:self-end ">
+                    <a href="" class="bg-grey-dark py-2 px-3 lg:inline-block w-full text-center">CALCOLA</a>
+                  </div>
+                  <div class="lg:col-span-4 col-span-2">
+                    <fieldset>
+                      <label class="text-xs font-semibold mb-1 block">indirizzo</label>
+                      <input type="text" placeholder="" class="border-none w-full" />
+                    </fieldset>
+                  </div>
+                  <div>
+                    <fieldset>
+                      <label class="text-xs font-semibold mb-1 block">n.civico</label>
+                      <input type="text" placeholder="" class="border-none w-full" />
+                    </fieldset>
+                  </div>
+                  <div>
+                    <fieldset>
+                      <label class="text-xs font-semibold mb-1 block">CAP</label>
+                      <input type="text" placeholder="" class="border-none w-full" />
+                    </fieldset>
+                  </div>
+                  <div>
+                    <fieldset>
+                      <label class="text-xs font-semibold mb-1 block">Città</label>
+                      <input type="text" placeholder="" class="border-none w-full" />
+                    </fieldset>
+                  </div>
+                  <div>
+                    <fieldset>
+                      <label class="text-xs font-semibold mb-1 block">Provincia</label>
+                      <input type="text" placeholder="" class="border-none w-full" />
+                    </fieldset>
+                  </div>
+                  <div class="lg:col-span-4 col-span-2">
+                    <fieldset>
+                      <label class="text-xs font-semibold mb-1 block">note aggiuntive utili alla consegna</label>
+                      <textarea class="w-full h-36 border-none"></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="lg:col-span-3 col-span-2">
+                    <fieldset class="inline-flex gap-2">
+                      <input type="checkbox" required class="border-none" />
+                      <p class="text-xs">Ho letto e accetto il trattamento dei miei dati secondo la privacy policy del sito web</p>
+                    </fieldset>
+                  </div>
+                  <div class="lg:col-span-1 lg:text-start col-span-2 text-center">
+                    <button type="submit" class="buttonRed w-full">SALVA I DATI</button>
+                  </div>
+                </div>
+              </form>
+              
+            </div>
+          </div>
+          <div>
+            <div class="bg-grey-light p-4 mb-7">
+              <h2 class="text-xl mb-4 font-medium">I MIEI ORDINI</h2>
+              <div class="flex flex-row flex-wrap justify-between py-3 border-b border-grey-default">
+                <p>#1<span class="ml-5">13.12.2022</span></p>                
+                <div class="text-red-default font-semibold">
+                    <p>€ 25.720<span class="ml-5 cursor-pointer">Dettagli ordine ></span></p>
+                </div>
+              </div>
+              <div class="flex flex-row flex-wrap justify-between py-3 border-b border-grey-default">
+                <p>#2<span class="ml-5">13.12.2022</span></p>                
+                <div class="text-red-default font-semibold">
+                    <p>€ 25.720<span class="ml-5 cursor-pointer">Dettagli ordine ></span></p>
+                </div>
+              </div>
+              <div class="flex flex-row flex-wrap justify-between py-3 border-b border-grey-default">
+                <p>#3<span class="ml-5">13.12.2022</span></p>                
+                <div class="text-red-default font-semibold">
+                    <p>€ 25.720<span class="ml-5 cursor-pointer">Dettagli ordine ></span></p>
+                </div>
+              </div>              
+            </div>            
+            <div class="bg-grey-light p-4 mb-7">
+                <h2 class="text-xl mb-4 font-medium">DETTAGLI ORDINE #1</h2>
+                <div class="flex flex-row justify-between py-3">
+                  <p>595 Scorpion Oro 1.4 Turbo T-Jet 165 cv</p>
+                  <p class="text-red-default font-semibold min-w-fit">€ 24.900</p>
+                </div>
+                <div class="flex flex-row justify-between py-3">
+                  <p>Altri servizi</p>
+                  <p class="text-red-default font-semibold min-w-fit">€ 650</p>
+                </div>
+                <hr />
+                <div class="flex flex-row justify-between py-3">
+                  <p><i class="fa-solid fa-people-arrows"></i> Costo passaggio di proprietà</p>
+                  <p class="text-red-default font-semibold min-w-fit">€ 250</p>
+                </div>
+                <div class="flex flex-row justify-between py-3">
+                  <p><i class="fa-solid fa-truck-fast"></i> Costo di trasporto</p>
+                  <p class="text-red-default font-semibold min-w-fit">€ 250</p>
+                </div>
+                <hr />
+                <div class="flex flex-row justify-between py-3">
+                  <p class="font-semibold text-lg">TOTALE</p>
+                  <p class="text-red-default font-semibold text-lg min-w-fit">€ 25.750</p>
+                </div>                
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <footer
+      class="grid lg:grid-cols-12 grid-cols-2 bg-blue-dark lg:px-12 py-12 px-6 text-white gap-5 text-sm items-center">
+      <div class="lg:col-span-4 col-span-2">
+        <div class="flex flex-row gap-5 items-center">
+          <img src="img/logo-gp-white.webp" class="lg:w-auto w-16 img-responsive" />
+          <p class="text-xs w-full">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            euismod tincidunt ut laoreet.</p>
+        </div>
+      </div>
+      <div class="lg:col-span-1 col-span-2">
+        <a href="parco.html" class="border-white border px-4 py-2 block text-center mb-4 hover:bg-white hover:text-blue-dark">ACQUISTA</a>
+        <a href="" class="border-white border px-4 py-2 block text-center hover:bg-white hover:text-blue-dark">VENDI</a>
+      </div>
+      <div class="lg:col-span-2 col-span-1">
+        <ul>
+          <li class="mb-2"><a href="">Chi siamo</a></li>
+          <li class="mb-2"><a href="">Blog</a></li>
+          <li class="mb-2"><a href="">Academy</a></li>
+          <li><a href="">Punti vendita</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-2 col-span-1">
+        <ul>
+          <li class="mb-2"><a href="">Termini e condizioni</a></li>
+          <li class="mb-2"><a href="">Privacy Policy</a></li>
+          <li class="mb-2"><a href="">Cookie Policy</a></li>
+          <li><a href="">Faq</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-3 col-span-2 text-center">
+        <ul class="flex flex-row flex-wrap lg:justify-end justify-center gap-3 text-2xl">
+          <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/scripting.js"></script>
+</body>
+
+</html>

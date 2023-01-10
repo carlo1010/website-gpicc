@@ -1,0 +1,194 @@
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gruppo Piccirillo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="text-black font-montserrat relative">
+
+  <div class="bg-blue-default lg:w-[450px] w-2/3 h-full fixed lg:-right-[450px] -right-2/3 top-0 border-t-8 border-blue-dark" id="menupanel">
+    <ul class="text-white text-right">
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="parco.html" class="block">ACQUISTA UN'AUTO</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="" class="block">VENDI LA TUA AUTO</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="servizi.html" class="block">SERVIZI ED ACCESSORI</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="chisiamo.html" class="block">GRUPPO PICCIRILLO</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="" class="block">LE NOSTRE SEDI</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="academy.html" class="block">ACCADEMY</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="" class="block">BLOG</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="faq.html" class="block">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="bg-blue-default lg:w-[450px] w-2/3 h-full fixed lg:-right-[450px] -right-2/3 top-0 border-t-8 border-blue-dark" id="cartpanel">
+    <h3 class="text-white py-3 text-xl font-medium px-4">IL TUO CARRELLO</h3>
+    <div class="flex flex-row flex-wrap items-center text-sm px-4 mb-2">
+      <div class="basis-2/12 lg:inline-block hidden">
+        <img src="img/sample-car1.webp" class="img-responsive" />
+      </div>
+      <div class="basis-7/12">
+        <h3 class="text-white font-semibold px-3">595 Scorpion Oro</h3>
+      </div>
+      <div class="lg:basis-3/12 basis-5/12 text-end">
+        <p class="text-red-default font-semibold">€ 24.900</p>
+      </div>
+    </div>
+    <div class="flex flex-row flex-wrap items-center text-sm px-4 mb-2">
+      <div class="basis-2/12 lg:inline-block hidden">
+        <img src="img/sample-car1.webp" class="img-responsive" />
+      </div>
+      <div class="basis-7/12">
+        <h3 class="text-white font-semibold px-3">595 Scorpion Oro</h3>
+      </div>
+      <div class="lg:basis-3/12 basis-5/12 text-end">
+        <p class="text-red-default font-semibold">€ 24.900</p>
+      </div>
+    </div>
+    <div class="flex flex-row flex-wrap items-center bg-white justify-between py-4 font-medium px-4">
+      <p class="hidden lg:inline-block">TOTALE CARRELLO</p>
+      <i class="lg:hidden text-2xl fa-solid fa-coins"></i>
+      <p class="text-red-default font-semibold lg:text-start text-end">€ 49.800</p>
+    </div>
+    <div class="flex flex-row justify-between text-xs px-4 mt-3">
+      <a href="" class="buttonBluDark">CHIUDI IL CARRELLO</a>
+      <a href="cart.html" class="buttonRed">CONCLUDI LA PRENOTAZIONE</a>
+    </div>
+  </div>
+
+  <div class="fullWrap">
+    <header class="flex flex-row justify-between items-center py-3 lg:px-10 px-6 top-0 left-0 w-full z-20 bg-white">
+      <div class="basis-3/12">
+        <a href="index.html"><img src="img/logo-gp.webp" /></a>
+      </div>
+      <div class="basis-4/12 text-end">
+        <nav class="inline-block">
+          <ul class="flex gap-6 font-semibold ">
+            <li class="hidden lg:inline-block"><a href="">CONTATTACI</a></li>
+            <li class="hidden lg:inline-block"><a href="login.html">ACCEDI</a></li>
+            <li><a href="parco.html"><i class="fa-solid fa-magnifying-glass text-2xl"></i></a></li>
+            <li class="relative">
+              <a href="" id="openCart">
+                <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                <span
+                  class="absolute -top-2 -right-3 bg-red-default rounded-full text-white block w-5 h-5 text-center text-xs leading-5">5</span>
+              </a>
+            </li>
+            <li><a href="" id="openMenu"><i class="fa-solid fa-bars text-2xl"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="flex flex-row justify-center py-12">
+      <div class="xl:basis-10/12 lg:basis-11/12 basis-full lg:px-0 px-6">
+        <h1 class="text-2xl font-medium mb-8">CHI SIAMO</h1>
+        <h2 class="text-xl font-medium mb-5">Passione, professionalità e un pizzico di pazzia.</h2>
+        <h2 class="text-xl font-medium mb-3">La nostra storia</h2>
+        <p class="mb-2">Gruppo Piccirillo è un’azienda dal passato importante, che affonda le sue radici nel territorio Casertano. Nasce infatti oltre 40 anni fa a Macerata Campania in provincia di Caserta. Con il passare degli anni, il brand Gruppo Piccirillo è cresciuto sempre più, diventando un punto di riferimento per il settore automotive in Campania e su tutto il territorio nazionale.</p>
+        <p class="mb-2">Ad oggi, il team è un mix di passione e persone. Siamo continuamente a caccia di nuove sfide, nuovi traguardi, con lo sguardo rivolto sempre al futuro; ma senza dimenticare che la solidità della nostra storia è basata sulla coerenza dei nostri valori: soddisfare ogni esigenza dei nostri clienti.</p>
+        <p class="mb-2">Tutti i servizi che offriamo sono tagliati su misura del cliente: dal finanziamento come la permuta e il leasing, fino a quelli formulati per l’assicurazione e per macinare chilometri con calma e in sicurezza.</p>          
+        <p class="mb-2">Sono ormai anni che il nostro business spinge i clienti che acquistano da noi ad uscire soddisfatti dalle nostre concessionarie e a ritornarci ben volentieri.</p>
+        <p class="mb-2">Gruppo Piccirillo è uno dei leader italiani nel mercato delle auto usate garantite, con offerte su oltre 3000 vetture.</p>
+        <p class="mb-2">Vieni a visitare i nostri showroom: professionalità, passione e un pizzico di pazzia ti aspettano.</p>
+        <h2 class="text-xl font-medium mb-3 mt-8">Perchè sceglierci?</h2>
+        <p class="mb-2">Perché mettiamo nel nostro lavoro <span class="font-semibold">passione, esperienza, professionalità</span> e un briciolo di pazzia.</p>
+        <p class="mb-2">Perché da sempre i nostri <span class="font-semibold">clienti</span> hanno visto <span class="font-semibold">soddisfare</span> ogni loro <span class="font-semibold">esigenza</span>;</p>
+        <p class="mb-2">Perché preferiamo non vendere piuttosto che vendere un'auto non adatta alle esigenze del cliente.</p>
+        <p class="mb-2">Perché trascorriamo tantissime ore a selezionare <span>auto sicure, affidabili e super accessoriate</span></p>
+        <p class="mb-2">Perché i nostri <span class="font-semibold">fornitori</span> sono tutti <span class="font-semibold">affidabili</span> e <span>il nostro usato è certificato</span></p>
+        <p class="mb-2">Perché per <span class="font-semibold">te</span> scegliamo solo il <span>meglio</span>.</p>
+        <p class="mb-2">Questo è <span class="font-semibold">Gruppo Piccirillo</span>, un'azienda con un passato importante ma capace di guardare al futuro. Una famiglia che ha saputo unire professionalità, passione e dedizione al lavoro, con un unico grande obiettivo: soddisfare il cliente. Una grande storia che unisce passione per i motori e amore per le quattroruote, che continua il suo viaggio lungo la strada del successo. <span class="font-semibold">Perché solo con un grande passato si costruisce un grande futuro</span>.</p>
+        <h2 class="text-xl font-medium mb-3 mt-8">Certificazione PRIME COMPANY</h2>
+        <p class="mb-2">Nel luglio del 2018, all'azienda è stata riconosciuta da CRIBIS, la certificazione PRIME COMPANY, che rappresenta la massima affidabilità commerciale.</p>
+        <p class="mb-2">CRIBIS è l'unica società in Italia in grado di garantire ai propri clienti un patrimonio informativo completo, costantemente aggiornato e certificato. Tutti gli istituti di credito e le finanziarie utilizzano i servizi CRIF.</p>
+        <p class="mb-2">A fine 2017, secondo lo studio condotto da Cribis, la percentuale di aziende da considerare eccellenti in termini di affidabilità commerciale ha raggiunto l'8% del totale.</p>
+        <p class="mb-2">Gruppo Piccirillo S.p.a. è una di queste!</p>
+        <p class="font-semibold mb-2 mt-8">Tra i servizi che ti offriamo:</p>
+        <ul class="list-disc">
+          <li>Finanziamenti con tassi agevolati e rateazioni estremamente flessibili</li>
+          <li>Assicurazioni su eventuali guasti dopo l'acquisto</li>
+          <li>Usato di alta qualità, garantito e certificato</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="flex flex-row justify-center py-12 bg-grey-default text-blue-default">
+      <div class="xl:basis-10/12 lg:basis-11/12 basis-full lg:px-0 px-6">
+        <div class="grid lg:grid-cols-3 grid-cols-1 gap-3 gap-y-4 text-center">
+          <div>
+            <i class="fa-solid fa-arrow-up-right-dots text-6xl"></i>
+            <h2 class="text-2xl mt-3 font-bold">FATTURATO 2021</h2>
+            <p class="text-xl font-semibold">230.477.491€</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-car text-6xl"></i>
+            <h2 class="text-2xl mt-3 font-bold">AUTO VENDUTE NEL 2021</h2>
+            <p class="text-xl font-semibold">13.568</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-thumbs-up text-6xl"></i>
+            <h2 class="text-2xl mt-3 font-bold">SODDISFAZIONE DEL CLIENTE</h2>
+            <div>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="grid lg:grid-cols-12 grid-cols-2 bg-blue-dark lg:px-12 py-12 px-6 text-white gap-5 text-sm items-center">
+      <div class="lg:col-span-4 col-span-2">
+        <div class="flex flex-row gap-5 items-center">
+          <img src="img/logo-gp-white.webp" class="lg:w-auto w-16 img-responsive" />
+          <p class="text-xs w-full">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            euismod tincidunt ut laoreet.</p>
+        </div>
+      </div>
+      <div class="lg:col-span-1 col-span-2">
+        <a href="parco.html" class="border-white border px-4 py-2 block text-center mb-4 hover:bg-white hover:text-blue-dark">ACQUISTA</a>
+        <a href="" class="border-white border px-4 py-2 block text-center hover:bg-white hover:text-blue-dark">VENDI</a>
+      </div>
+      <div class="lg:col-span-2 col-span-1">
+        <ul>
+          <li class="mb-2"><a href="">Chi siamo</a></li>
+          <li class="mb-2"><a href="">Blog</a></li>
+          <li class="mb-2"><a href="">Academy</a></li>
+          <li><a href="">Punti vendita</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-2 col-span-1">
+        <ul>
+          <li class="mb-2"><a href="">Termini e condizioni</a></li>
+          <li class="mb-2"><a href="">Privacy Policy</a></li>
+          <li class="mb-2"><a href="">Cookie Policy</a></li>
+          <li><a href="">Faq</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-3 col-span-2 text-center">
+        <ul class="flex flex-row flex-wrap lg:justify-end justify-center gap-3 text-2xl">
+          <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/scripting.js"></script>
+</body>
+
+</html>

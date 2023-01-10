@@ -1,0 +1,945 @@
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruppo Piccirillo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="text-black font-montserrat relative">
+
+  <div class="bg-blue-default lg:w-[450px] w-2/3 h-full fixed lg:-right-[450px] -right-2/3 top-0 border-t-8 border-blue-dark" id="menupanel">
+    <ul class="text-white text-right">
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="parco.html" class="block">ACQUISTA UN'AUTO</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="" class="block">VENDI LA TUA AUTO</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="servizi.html" class="block">SERVIZI ED ACCESSORI</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="chisiamo.html" class="block">GRUPPO PICCIRILLO</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="" class="block">LE NOSTRE SEDI</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="academy.html" class="block">ACCADEMY</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="" class="block">BLOG</a></li>
+      <li class="py-2 pr-3 hover:bg-blue-dark"><a href="faq.html" class="block">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="bg-blue-default lg:w-[450px] w-2/3 h-full fixed lg:-right-[450px] -right-2/3 top-0 border-t-8 border-blue-dark" id="cartpanel">
+    <h3 class="text-white py-3 text-xl font-medium px-4">IL TUO CARRELLO</h3>
+    <div class="flex flex-row flex-wrap items-center text-sm px-4 mb-2">
+      <div class="basis-2/12 lg:inline-block hidden">
+        <img src="img/sample-car1.webp" class="img-responsive" />
+      </div>
+      <div class="basis-7/12">
+        <h3 class="text-white font-semibold px-3">595 Scorpion Oro</h3>
+      </div>      
+      <div class="lg:basis-3/12 basis-5/12 text-end">
+        <p class="text-red-default font-semibold">€ 24.900</p>
+      </div>
+    </div>
+    <div class="flex flex-row flex-wrap items-center text-sm px-4 mb-2">
+      <div class="basis-2/12 lg:inline-block hidden">
+        <img src="img/sample-car1.webp" class="img-responsive" />
+      </div>
+      <div class="basis-7/12">
+        <h3 class="text-white font-semibold px-3">595 Scorpion Oro</h3>
+      </div>      
+      <div class="lg:basis-3/12 basis-5/12 text-end">
+        <p class="text-red-default font-semibold">€ 24.900</p>
+      </div>
+    </div>
+    <div class="flex flex-row flex-wrap items-center bg-white justify-between py-4 font-medium px-4">
+      <p class="hidden lg:inline-block">TOTALE CARRELLO</p>
+      <i class="lg:hidden text-2xl fa-solid fa-coins"></i>
+      <p class="text-red-default font-semibold lg:text-start text-end">€ 49.800</p>
+    </div>
+    <div class="flex flex-row justify-between text-xs px-4 mt-3">
+      <a href="" id="closeCart" class="buttonBluDark">CHIUDI IL CARRELLO</a>
+      <a href="cart.html" class="buttonRed">CONCLUDI LA PRENOTAZIONE</a>
+    </div>
+  </div>
+    
+  <div class="fullWrap">
+    <header class="flex flex-row items-center py-3 lg:px-10 px-6 top-0 left-0 w-full z-20 bg-white">
+      <div class="basis-3/12">
+        <a href="index.html"><img src="img/logo-gp.webp" /></a>
+      </div>
+      <div class="basis-5/12 text-center">   
+        <a href="parco.html" class="bg-blue-default text-white text-base py-1 px-4 rounded-l-full font-semibold lg:inline-block hidden">ACQUISTA UN AUTO</a>
+        <a href="" class="bg-red-default text-white text-base py-1 px-4 rounded-r-full font-semibold lg:inline-block hidden">VENDI LA TUA AUTO</a>
+      </div>
+      <div class="basis-4/12 text-end">
+        <nav class="inline-block">
+          <ul class="flex gap-6 font-semibold ">
+            <li class="hidden lg:inline-block"><a href="">CONTATTACI</a></li>
+            <li class="hidden lg:inline-block"><a href="login.html">ACCEDI</a></li>
+            <li><a href="parco.html"><i class="fa-solid fa-magnifying-glass text-2xl"></i></a></li>                   
+            <li class="relative">
+              <a href="" id="openCart">
+                <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                <span class="absolute -top-2 -right-3 bg-red-default rounded-full text-white block w-5 h-5 text-center text-xs leading-5">5</span>
+              </a>
+            </li>
+            <li><a href="" id="openMenu"><i class="fa-solid fa-bars text-2xl"></i></a></li>                   
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="searchCar" class="flex flex-row justify-center absolute lg:top-[124px] z-10 w-full lg:pt-9">
+      <div class="lg:basis-6/12 basis-full">
+        <div class="bg-blue-default p-1">
+          <form class="m-0">
+            <input type="text" name="s" value="" autocomplete="off" class="dynWidth" placeholder="Che auto stai cercando? Scrivilo qui" />              
+            <button type="submit" class="w-[42px] aspect-square bg-red-default text-white"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>            
+        </div>
+        <div id="tabSearchCar" class="bg-white gp-tab lg:mt-5 lg:px-9 px-6 py-5 max-h-[490px] overflow-hidden overflow-y-scroll hidden">
+          <ul class="flex gap-4 justify-center">
+            <li class="borderRedButton activeTab" data-tab="1">Brand</li>
+            <li class="borderRedButton" data-tab="2">Categoria</li>
+            <li class="borderRedButton" data-tab="3">Prezzo</li>
+          </ul>
+          <div data-panel="1" class="">
+            <div class="flex items-center gap-5 border-grey-default border-b pb-3 mt-6">
+              <img src="img/alfa.webp" class="img-responsive w-14" />
+              <h2 class="text-2xl">ALFA ROMEO</h2>                
+            </div>
+            <div class="grid lg:grid-cols-5 grid-cols-3 gap-5">
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>                
+            </div>
+            <div class="flex items-center gap-5 border-grey-default border-b pb-3 mt-6">
+              <img src="img/citroen.webp" class="img-responsive w-14" />
+              <h2 class="text-2xl">CITROEN</h2>                
+            </div>
+            <div class="grid lg:grid-cols-5 grid-cols-3 gap-5">
+              <div class="text-center">
+                <a href="">
+                  <img src="img/aircross.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">C3 Aircross</h3>  
+                </a>                  
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/aircross.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">C3 Aircross</h3>  
+                </a>                  
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/aircross.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">C3 Aircross</h3>  
+                </a>                  
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/aircross.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">C3 Aircross</h3>  
+                </a>                  
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/aircross.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">C3 Aircross</h3>  
+                </a>                  
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/aircross.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">C3 Aircross</h3>  
+                </a>                  
+              </div>
+              
+            </div>
+          </div>
+          <div data-panel="2" class="hidden">
+            <div class="flex items-center gap-5 border-grey-default border-b pb-3 mt-6">                
+              <h2 class="text-2xl">UTILITARIE</h2>                
+            </div>
+            <div class="grid lg:grid-cols-5 grid-cols-3 gap-5">
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>                
+            </div>
+            <div class="flex items-center gap-5 border-grey-default border-b pb-3 mt-6">                
+              <h2 class="text-2xl">SUV</h2>                
+            </div>
+            <div class="grid lg:grid-cols-5 grid-cols-3 gap-5">
+              <div class="text-center">
+                <a href="">
+                  <img src="img/aircross.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">C3 Aircross</h3>  
+                </a>                  
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/aircross.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">C3 Aircross</h3>  
+                </a>                  
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/aircross.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">C3 Aircross</h3>  
+                </a>                  
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/aircross.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">C3 Aircross</h3>  
+                </a>                  
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/aircross.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">C3 Aircross</h3>  
+                </a>                  
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/aircross.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">C3 Aircross</h3>  
+                </a>                  
+              </div>
+              
+            </div>
+          </div>
+          <div data-panel="3" class="hidden">
+            <div class="flex items-center gap-5 border-grey-default border-b pb-3 mt-6">                
+              <h2 class="text-2xl">0 - 10.000€</h2>                
+            </div>
+            <div class="grid lg:grid-cols-5 grid-cols-3 gap-5">
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/giulia.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">Giulietta</h3>
+                </a>
+              </div>                
+            </div>
+            <div class="flex items-center gap-5 border-grey-default border-b pb-3 mt-6">                
+              <h2 class="text-2xl">10.000€ - 15.000€</h2>                
+            </div>
+            <div class="grid lg:grid-cols-5 grid-cols-3 gap-5">
+              <div class="text-center">
+                <a href="">
+                  <img src="img/aircross.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">C3 Aircross</h3>  
+                </a>                  
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/aircross.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">C3 Aircross</h3>  
+                </a>                  
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/aircross.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">C3 Aircross</h3>  
+                </a>                  
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/aircross.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">C3 Aircross</h3>  
+                </a>                  
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/aircross.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">C3 Aircross</h3>  
+                </a>                  
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <img src="img/aircross.webp" class="img-responsive" />
+                  <h3 class="mt-4 font-semibold text-sm text-blue-default">C3 Aircross</h3>  
+                </a>                  
+              </div>
+              
+            </div>
+          </div>
+        </div>   
+      </div>
+    </div>
+
+    <section class="relative">      
+      <div class="flexslider gp-flexslider carevidence">
+        <ul class="slides">
+          <li>
+            <div class="relative">
+              <img data-mobile="img/mobile-slide.webp" data-desktop="img/slide-car.webp" src="img/slide-car.webp" class="img-responsive switchImg" />
+              <div class="absolute left-0 lg:bottom-5 bottom-1/2 lg:translate-y-0 translate-y-1/2 w-full text-center bg-black/50 py-8">
+                <h2 class="font-extrabold text-white lg:text-5xl text-3xl">TROVA LA TUA AUTO <br />TRA LE 85.000 AUTO DISPONIBILI</h2>
+                <a href="" class="buttonRed mt-5 inline-block">ESPLORA IL NOSTRO PARCO AUTO</a>
+              </div>
+            </div>
+          </li>                
+        </ul>
+      </div>
+    </section>
+
+    <section class="px-12 bg-grey-light relative">
+      <span class="carprev block absolute left-3 top-2/4 -translate-y-2/4 cursor-pointer text-grey-dark"><i class="fa-solid fa-chevron-left text-2xl"></i></span>
+      <span class="carnext block absolute right-3 top-2/4 -translate-y-2/4 cursor-pointer text-grey-dark"><i class="fa-solid fa-chevron-right text-2xl"></i></span>
+      <div class="flexslider gp-flexslider carbrand">
+        <ul class="slides">
+          <li>
+            <a href="">
+              <div class="bg-grey-default text-center py-8 relative group">
+                <div class="countCar group-hover:block"><span class="block text-3xl font-extrabold mt-[22%]">145</span><p class="text-xs -mt-1">auto</p></div>
+                <img src="img/citroen.webp" class="img-responsive" />
+              </div>
+            </a>                    
+          </li>
+          <li>
+            <a href="">
+              <div class="bg-grey-light text-center py-8 relative group">
+                <div class="countCar group-hover:block"><span class="block text-3xl font-extrabold mt-[22%]">145</span><p class="text-xs -mt-1">auto</p></div>
+                <img src="img/citroen.webp" class="img-responsive" />
+              </div>    
+            </a>                    
+          </li>
+          <li>
+            <a href="">
+              <div class="bg-grey-default text-center py-8 relative group">
+                <div class="countCar group-hover:block"><span class="block text-3xl font-extrabold mt-[22%]">145</span><p class="text-xs -mt-1">auto</p></div>
+                <img src="img/citroen.webp" class="img-responsive" />
+              </div>
+            </a>                    
+          </li>
+          <li>
+            <a href="">
+              <div class="bg-grey-light text-center py-8 relative group">
+                <div class="countCar group-hover:block"><span class="block text-3xl font-extrabold mt-[22%]">145</span><p class="text-xs -mt-1">auto</p></div>
+                <img src="img/citroen.webp" class="img-responsive" />
+              </div>    
+            </a>                    
+          </li>
+          <li>
+            <a href="">
+              <div class="bg-grey-default text-center py-8 relative group">
+                <div class="countCar group-hover:block"><span class="block text-3xl font-extrabold mt-[22%]">145</span><p class="text-xs -mt-1">auto</p></div>
+                <img src="img/citroen.webp" class="img-responsive" />
+              </div>
+            </a>                    
+          </li>
+          <li>
+            <a href="">
+              <div class="bg-grey-light text-center py-8 relative group">
+                <div class="countCar group-hover:block"><span class="block text-3xl font-extrabold mt-[22%]">145</span><p class="text-xs -mt-1">auto</p></div>
+                <img src="img/citroen.webp" class="img-responsive" />
+              </div>    
+            </a>                    
+          </li>
+          <li>
+            <a href="">
+              <div class="bg-grey-default text-center py-8 relative group">
+                <div class="countCar group-hover:block"><span class="block text-3xl font-extrabold mt-[22%]">145</span><p class="text-xs -mt-1">auto</p></div>
+                <img src="img/citroen.webp" class="img-responsive" />
+              </div>
+            </a>                    
+          </li>
+          <li>
+            <a href="">
+              <div class="bg-grey-light text-center py-8 relative group">
+                <div class="countCar group-hover:block"><span class="block text-3xl font-extrabold mt-[22%]">145</span><p class="text-xs -mt-1">auto</p></div>
+                <img src="img/citroen.webp" class="img-responsive" />
+              </div>    
+            </a>                    
+          </li>                   
+        </ul>
+      </div>
+    </section>
+
+    <section class="flex flex-row justify-center py-12">
+      <div class="lg:basis-10/12 basis-full">
+        <div class="flex flex-row mb-8">
+          <div class="basis-full lg:px-0 px-6">
+            <h2 class="text-3xl font-medium">COME ACQUISTARE UN'AUTO ONLINE?</h2>
+          </div>
+        </div>
+        <div class="flex flex-row flex-wrap items-center gap-y-5">
+          <div class="lg:basis-3/12 basis-full lg:px-0 px-6">
+            <div class="flex items-center text-blue-default gap-3 beforeCircle relative py-8">
+              <div class="font-extrabold text-7xl">1</div>
+              <div>
+                <h3 class="font-extrabold text-2xl">Trova <br class="lg:inline-block hidden" />l'auto</h3>
+                <p class="text-sm">Usa i nostri filtri di ricerca</p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:basis-3/12 basis-full lg:px-0 px-6">
+            <div class="flex text-blue-default gap-3 beforeCircle relative py-8">
+              <div class="font-extrabold text-7xl">2</div>
+              <div>
+                <h3 class="font-extrabold text-2xl">Prenota <br class="lg:inline-block hidden" />online</h3>
+                <p class="text-sm">Aggiungi l'auto nel carrello</p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:basis-3/12 basis-full lg:px-0 px-6">
+            <div class="flex text-blue-default gap-3 beforeCircle relative py-8">
+              <div class="font-extrabold text-7xl">3</div>
+              <div>
+                <h3 class="font-extrabold text-2xl">Ritira <br class="lg:inline-block hidden" />l'auto</h3>
+                <p class="text-sm">Vai al punto vendita più vicino a te</p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:basis-3/12 basis-full lg:px-0 px-6 text-center font-extrabold">
+            <a href="" class="block border-red-default border-4 text-3xl py-5">INIZIA ORA</a>
+            <p class="text-red-default">e risparmia 500€</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid grid-cols-12 items-center">
+      <div class="justify-self-center">
+        <span class="carprev block cursor-pointer text-grey-dark"><i class="fa-solid fa-chevron-left text-3xl"></i></span>
+      </div>
+      <div class="col-span-10">
+        <div class="flexslider gp-flexslider markFlex">
+          <ul class="slides">
+            <li>
+              <a href="">                
+                <img class="switchImg" data-mobile="img/sample-mark-square.webp" data-desktop="img/sample-marketing.webp" src="img/sample-marketing.webp" class="img-responsive" />                
+              </a>
+            </li>     
+            <li>
+              <a href="">                
+                <img class="switchImg" data-mobile="img/sample-mark-square.webp" data-desktop="img/sample-marketing.webp" src="img/sample-marketing.webp" class="img-responsive" />                
+              </a>
+            </li>                     
+          </ul>
+        </div>
+      </div>
+      <div class="justify-self-center">
+        <span class="carnext block cursor-pointer text-grey-dark"><i class="fa-solid fa-chevron-right text-3xl"></i></span>
+      </div>      
+    </section>
+
+    <section class="flex flex-row justify-center py-12">
+      <div class="basis-10/12">
+        <div class="flex flex-row mb-8">
+          <div class="basis-full">
+            <h2 class="text-2xl font-medium">SCOPRI LE NOSTRE OFFERTE IN EVIDENZA</h2>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-4 grid-cols-1 gap-x-5 gap-y-8">
+          <div>
+            <a href="auto.html">            
+              <div class="relative">
+                <span class="absolute left-0 top-0 buttonRed text-xs">PROMO</span>
+                <img src="img/sample-car1.webp" class="img-responsive" />
+              </div>
+              <h2 class="text-xl font-semibold my-2">595 Scorpion Oro</h2>
+              <p class="mb-2">1.4 Turbo T-Jet 165cv</p>
+              <div class="flex flex-row gap-2 mb-2">
+                <div class="text-xs">
+                  <i class="fa-regular fa-calendar mr-1"></i>
+                  <p class="inline-block">2021</p>
+                </div>
+                <div class="text-xs">
+                  <i class="fa-solid fa-droplet mr-1"></i>
+                  <p class="inline-block">Benzina</p>
+                </div>
+                <div class="text-xs">
+                  <i class="fa-solid fa-road mr-1"></i>
+                  <p class="inline-block">9300km</p>
+                </div>
+                <div class="text-xs">
+                  <i class="fa-solid fa-wave-square mr-1"></i>
+                  <p class="inline-block">Manuale</p>
+                </div>
+              </div>
+              <p class="text-red-default font-semibold text-xl border-grey-default border-b pb-2">€ 24.900</p>
+              <p class="mt-1">da <span class="text-red-default font-semibold">€ 345,54</span> al mese</p>
+            </a>
+          </div>
+          <div>
+            <a href="auto.html">            
+              <div class="relative">
+                <span class="absolute left-0 top-0 buttonRed text-xs">PROMO</span>
+                <img src="img/sample-car2.webp" class="img-responsive" />
+              </div>
+              <h2 class="text-xl font-semibold my-2">A1 Sportback</h2>
+              <p class="mb-2">30 TFSI advanced S-Tronic</p>
+              <div class="flex flex-row gap-2 mb-2">
+                <div class="text-xs">
+                  <i class="fa-regular fa-calendar mr-1"></i>
+                  <p class="inline-block">2021</p>
+                </div>
+                <div class="text-xs">
+                  <i class="fa-solid fa-droplet mr-1"></i>
+                  <p class="inline-block">Benzina</p>
+                </div>
+                <div class="text-xs">
+                  <i class="fa-solid fa-road mr-1"></i>
+                  <p class="inline-block">9300km</p>
+                </div>
+                <div class="text-xs">
+                  <i class="fa-solid fa-wave-square mr-1"></i>
+                  <p class="inline-block">Manuale</p>
+                </div>
+              </div>
+              <p class="text-red-default font-semibold text-xl border-grey-default border-b pb-2">€ 23.990</p>
+              <p class="mt-1">da <span class="text-red-default font-semibold">€ 125,54</span> al mese</p>
+            </a>
+          </div>
+          <div>
+            <a href="auto.html">            
+              <div class="relative">
+                <span class="absolute left-0 top-0 buttonRed text-xs">PROMO</span>
+                <img src="img/sample-car1.webp" class="img-responsive" />
+              </div>
+              <h2 class="text-xl font-semibold my-2">595 Scorpion Oro</h2>
+              <p class="mb-2">1.4 Turbo T-Jet 165cv</p>
+              <div class="flex flex-row gap-2 mb-2">
+                <div class="text-xs">
+                  <i class="fa-regular fa-calendar mr-1"></i>
+                  <p class="inline-block">2021</p>
+                </div>
+                <div class="text-xs">
+                  <i class="fa-solid fa-droplet mr-1"></i>
+                  <p class="inline-block">Benzina</p>
+                </div>
+                <div class="text-xs">
+                  <i class="fa-solid fa-road mr-1"></i>
+                  <p class="inline-block">9300km</p>
+                </div>
+                <div class="text-xs">
+                  <i class="fa-solid fa-wave-square mr-1"></i>
+                  <p class="inline-block">Manuale</p>
+                </div>
+              </div>
+              <p class="text-red-default font-semibold text-xl border-grey-default border-b pb-2">€ 24.900</p>
+              <p class="mt-1">da <span class="text-red-default font-semibold">€ 345,54</span> al mese</p>
+            </a>
+          </div>
+          <div>
+            <a href="auto.html">            
+              <div class="relative">
+                <span class="absolute left-0 top-0 buttonRed text-xs">PROMO</span>
+                <img src="img/sample-car2.webp" class="img-responsive" />
+              </div>
+              <h2 class="text-xl font-semibold my-2">A1 Sportback</h2>
+              <p class="mb-2">30 TFSI advanced S-Tronic</p>
+              <div class="flex flex-row gap-2 mb-2">
+                <div class="text-xs">
+                  <i class="fa-regular fa-calendar mr-1"></i>
+                  <p class="inline-block">2021</p>
+                </div>
+                <div class="text-xs">
+                  <i class="fa-solid fa-droplet mr-1"></i>
+                  <p class="inline-block">Benzina</p>
+                </div>
+                <div class="text-xs">
+                  <i class="fa-solid fa-road mr-1"></i>
+                  <p class="inline-block">9300km</p>
+                </div>
+                <div class="text-xs">
+                  <i class="fa-solid fa-wave-square mr-1"></i>
+                  <p class="inline-block">Manuale</p>
+                </div>
+              </div>
+              <p class="text-red-default font-semibold text-xl border-grey-default border-b pb-2">€ 23.990</p>
+              <p class="mt-1">da <span class="text-red-default font-semibold">€ 125,54</span> al mese</p>
+            </a>
+          </div>
+        </div>
+
+        
+    </section>
+
+    <section class="flex flex-row flex-wrap justify-center py-12 bg-grey-light">
+      <div class="lg:basis-10/12 basis-full ">
+        <div class="flex flex-row mb-8">
+          <div class="basis-full lg:px-0 px-6">
+            <h2 class="text-2xl font-medium">COSA DICONO DI NOI</h2>
+          </div>
+        </div>
+        <div class="flex flex-row flex-wrap gap-y-5">
+          <div class="lg:basis-6/12 basis-full lg:px-0 px-6">
+            <h2 class="text-lg font-semibold">Mario Rossi <span class="text-grey-dark">- Cliente</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam </p>
+          </div>
+          <div class="lg:basis-6/12 basis-full lg:px-0 px-6">
+            <h2 class="text-lg font-semibold">Mario Rossi <span class="text-grey-dark">- Cliente</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam </p>
+          </div>
+        </div>
+        <div class="flex flex-row mt-8">
+          <div class="basis-full text-center">
+            <a href="" class="font-semibold">leggi le altre recensioni >></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-row flex-wrap justify-center py-12 gp-tab">
+      <div class="lg:basis-10/12 basis-full">
+        <div class="flex flex-row flex-wrap mb-8">
+          <div class="lg:basis-6/12 basis-full lg:p-0 px-6 py-5">
+            <h2 class="text-2xl font-medium">LE NOSTRE SEDI</h2>
+          </div>
+          <div class="lg:basis-6/12 basis-full lg:px-0 px-6">
+            <ul class="flex flex-row flex-wrap gap-4 lg:justify-end">
+              <li data-tab="1" class="borderRedButton activeTab">CURTI</li>
+              <li data-tab="2" class="borderRedButton">AVELLINO</li>
+              <li data-tab="3" class="borderRedButton">SALERNO</li>
+              <li data-tab="4" class="borderRedButton">ROMA</li>
+              <li data-tab="5" class="borderRedButton">BOLOGNA</li>
+            </ul>
+          </div>
+        </div>
+        <div data-panel="1">
+          <div class="grid lg:grid-cols-2 grid-cols-1 items-center gap-5">
+            <div>
+              <img src="img/sample-sede.webp" class="img-responsive" />
+            </div>
+            <div class="lg:px-0 px-6">
+              <h2 class="text-2xl mb-8">CURTI</h2>
+              <div class="flex flex-row items-center gap-5 mb-6">              
+                <div>
+                  <i class="fa-solid fa-location-dot text-3xl text-blue-default"></i>
+                </div>
+                <div>
+                  <p>Via Nazionale Appia, 81 81040 Curti CE</p>
+                  <a href="" class="text-red-default font-semibold">Raggiungici</a>
+                </div>              
+              </div>
+              <div class="flex flex-row items-center gap-5 mb-6">              
+                <div>
+                  <i class="fa-solid fa-mobile-screen-button text-3xl text-blue-default"></i>
+                </div>
+                <div>
+                  <p>+39 0823 224552</p>
+                  <a href="" class="text-red-default font-semibold">Telefonaci</a>
+                </div>              
+              </div>
+              <div class="flex flex-row items-center gap-5 mb-6">              
+                <div>
+                  <i class="fa-solid fa-at text-3xl text-blue-default"></i>
+                </div>
+                <div>
+                  <p>info@gruppopiccirillo.it</p>
+                  <a href="" class="text-red-default font-semibold">Scrivici</a>
+                </div>              
+              </div> 
+            </div>
+          </div>
+        </div>
+        <div data-panel="2" class="hidden">
+          <div class="grid lg:grid-cols-2 grid-cols-1 items-center gap-5">
+            <div>
+              <img src="img/sample-sede.webp" class="img-responsive" />
+            </div>
+            <div class="lg:px-0 px-6">
+              <h2 class="text-2xl mb-8">AVELLINO</h2>
+              <div class="flex flex-row items-center gap-5 mb-6">              
+                <div>
+                  <i class="fa-solid fa-location-dot text-3xl text-blue-default"></i>
+                </div>
+                <div>
+                  <p>Via Nazionale Appia, 81 81040 Curti CE</p>
+                  <a href="" class="text-red-default font-semibold">Raggiungici</a>
+                </div>              
+              </div>
+              <div class="flex flex-row items-center gap-5 mb-6">              
+                <div>
+                  <i class="fa-solid fa-mobile-screen-button text-3xl text-blue-default"></i>
+                </div>
+                <div>
+                  <p>+39 0823 224552</p>
+                  <a href="" class="text-red-default font-semibold">Telefonaci</a>
+                </div>              
+              </div>
+              <div class="flex flex-row items-center gap-5 mb-6">              
+                <div>
+                  <i class="fa-solid fa-at text-3xl text-blue-default"></i>
+                </div>
+                <div>
+                  <p>info@gruppopiccirillo.it</p>
+                  <a href="" class="text-red-default font-semibold">Scrivici</a>
+                </div>              
+              </div> 
+            </div>
+          </div>
+        </div>
+        <div data-panel="3" class="hidden">
+          <div class="grid lg:grid-cols-2 grid-cols-1 items-center gap-5">
+            <div>
+              <img src="img/sample-sede.webp" class="img-responsive" />
+            </div>
+            <div class="lg:px-0 px-6">
+              <h2 class="text-2xl mb-8">SALERNO</h2>
+              <div class="flex flex-row items-center gap-5 mb-6">              
+                <div>
+                  <i class="fa-solid fa-location-dot text-3xl text-blue-default"></i>
+                </div>
+                <div>
+                  <p>Via Nazionale Appia, 81 81040 Curti CE</p>
+                  <a href="" class="text-red-default font-semibold">Raggiungici</a>
+                </div>              
+              </div>
+              <div class="flex flex-row items-center gap-5 mb-6">              
+                <div>
+                  <i class="fa-solid fa-mobile-screen-button text-3xl text-blue-default"></i>
+                </div>
+                <div>
+                  <p>+39 0823 224552</p>
+                  <a href="" class="text-red-default font-semibold">Telefonaci</a>
+                </div>              
+              </div>
+              <div class="flex flex-row items-center gap-5 mb-6">              
+                <div>
+                  <i class="fa-solid fa-at text-3xl text-blue-default"></i>
+                </div>
+                <div>
+                  <p>info@gruppopiccirillo.it</p>
+                  <a href="" class="text-red-default font-semibold">Scrivici</a>
+                </div>              
+              </div> 
+            </div>
+          </div>
+        </div>
+        <div data-panel="4" class="hidden">
+          <div class="grid lg:grid-cols-2 grid-cols-1 items-center gap-5">
+            <div>
+              <img src="img/sample-sede.webp" class="img-responsive" />
+            </div>
+            <div class="lg:px-0 px-6">
+              <h2 class="text-2xl mb-8">ROMA</h2>
+              <div class="flex flex-row items-center gap-5 mb-6">              
+                <div>
+                  <i class="fa-solid fa-location-dot text-3xl text-blue-default"></i>
+                </div>
+                <div>
+                  <p>Via Nazionale Appia, 81 81040 Curti CE</p>
+                  <a href="" class="text-red-default font-semibold">Raggiungici</a>
+                </div>              
+              </div>
+              <div class="flex flex-row items-center gap-5 mb-6">              
+                <div>
+                  <i class="fa-solid fa-mobile-screen-button text-3xl text-blue-default"></i>
+                </div>
+                <div>
+                  <p>+39 0823 224552</p>
+                  <a href="" class="text-red-default font-semibold">Telefonaci</a>
+                </div>              
+              </div>
+              <div class="flex flex-row items-center gap-5 mb-6">              
+                <div>
+                  <i class="fa-solid fa-at text-3xl text-blue-default"></i>
+                </div>
+                <div>
+                  <p>info@gruppopiccirillo.it</p>
+                  <a href="" class="text-red-default font-semibold">Scrivici</a>
+                </div>              
+              </div> 
+            </div>
+          </div>
+        </div>
+        <div data-panel="5" class="hidden">
+          <div class="grid lg:grid-cols-2 grid-cols-1 items-center gap-5">
+            <div>
+              <img src="img/sample-sede.webp" class="img-responsive" />
+            </div>
+            <div class="lg:px-0 px-6">
+              <h2 class="text-2xl mb-8">BOLOGNA</h2>
+              <div class="flex flex-row items-center gap-5 mb-6">              
+                <div>
+                  <i class="fa-solid fa-location-dot text-3xl text-blue-default"></i>
+                </div>
+                <div>
+                  <p>Via Nazionale Appia, 81 81040 Curti CE</p>
+                  <a href="" class="text-red-default font-semibold">Raggiungici</a>
+                </div>              
+              </div>
+              <div class="flex flex-row items-center gap-5 mb-6">              
+                <div>
+                  <i class="fa-solid fa-mobile-screen-button text-3xl text-blue-default"></i>
+                </div>
+                <div>
+                  <p>+39 0823 224552</p>
+                  <a href="" class="text-red-default font-semibold">Telefonaci</a>
+                </div>              
+              </div>
+              <div class="flex flex-row items-center gap-5 mb-6">              
+                <div>
+                  <i class="fa-solid fa-at text-3xl text-blue-default"></i>
+                </div>
+                <div>
+                  <p>info@gruppopiccirillo.it</p>
+                  <a href="" class="text-red-default font-semibold">Scrivici</a>
+                </div>              
+              </div> 
+            </div>
+          </div>          
+        </div>        
+      </div>
+    </section>
+
+    <footer class="grid lg:grid-cols-12 grid-cols-2 bg-blue-dark lg:px-12 py-12 px-6 text-white gap-5 text-sm items-center">
+      <div class="lg:col-span-4 col-span-2">
+        <div class="flex flex-row gap-5 items-center">
+          <img src="img/logo-gp-white.webp" class="lg:w-auto w-16 img-responsive" />
+          <p class="text-xs w-full">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+        </div>
+      </div>
+      <div class="lg:col-span-1 col-span-2">
+        <a href="parco.html" class="border-white border px-4 py-2 block text-center mb-4 hover:bg-white hover:text-blue-dark">ACQUISTA</a>
+        <a href="" class="border-white border px-4 py-2 block text-center hover:bg-white hover:text-blue-dark">VENDI</a>
+      </div>
+      <div class="lg:col-span-2 col-span-1">
+        <ul>
+          <li class="mb-2"><a href="">Chi siamo</a></li>
+          <li class="mb-2"><a href="">Blog</a></li>
+          <li class="mb-2"><a href="">Academy</a></li>
+          <li><a href="">Punti vendita</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-2 col-span-1">
+        <ul>
+          <li class="mb-2"><a href="">Termini e condizioni</a></li>
+          <li class="mb-2"><a href="">Privacy Policy</a></li>
+          <li class="mb-2"><a href="">Cookie Policy</a></li>
+          <li><a href="">Faq</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-3 col-span-2 text-center">
+        <ul class="flex flex-row flex-wrap lg:justify-end justify-center gap-3 text-2xl">
+          <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </div>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/scripting.js"></script>
+</body>
+</html>
